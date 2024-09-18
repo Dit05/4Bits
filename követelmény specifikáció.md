@@ -32,8 +32,6 @@ Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megr
 | K3 | Backend | Csevegés mentése és betöltése | A csevegés mentődjön el egy szövegfájlba amikor a szerver leáll, és töltődjön be amikor elindul. |
 | K4 | Backend | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
 
-## 9. Riportok
-
 ## 10. Fogalomtár
 
 Aszinkron kommunikáció - A felhasználók közötti információcsere anélkül, hogy valós idejű interakcióra lenne szüksége.
