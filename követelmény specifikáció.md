@@ -15,11 +15,13 @@ A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különbö
 
 ## 4. Funkcionális követelmények
 
+
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
 
 ## 6. Jelenlegi üzleti folyamatok modellje
+Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megrendelőnk kérése számunkra az volt,hogy segítsünk neki egy olyan chat weboldalt készíteni amivel később más cég vetélytársa lehet mint például Messenger,Telegram.Bejelentkezés nélkül egy felhasználónév megadásával tud beszélgetni bárkivel a világon.
 
-## 7. Igényelt üzleti folyamatok
+## 7. Igényelt üzleti folyamatok modellje
 
 ## 8. Követelménylista
 
