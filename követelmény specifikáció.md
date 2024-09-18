@@ -13,24 +13,12 @@ A világon nincs elég üzenetküldő rendszer. Ezért alakítunk ki egy új, sz
 A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különböző felhasználók között. A felhasználónak be kell írnia a nevét, majd az üzenetet amit el szeretne küldeni. A nevet a weboldal megjegyzi
 és onnantól bármennyi üzenetet írhat a felhasználó.
 
-<<<<<<< HEAD
-## 4. Funkcionális követelmények
-
-
-## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
-
-## 6. Jelenlegi üzleti folyamatok modellje
+## 4. Jelenlegi üzleti folyamatok modellje
 Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megrendelőnk kérése számunkra az volt,hogy segítsünk neki egy olyan chat weboldalt készíteni amivel később más cég vetélytársa lehet mint például Messenger,Telegram.Bejelentkezés nélkül egy felhasználónév megadásával tud beszélgetni bárkivel a világon.Egyszerűsíti és felgyorsítja kapcsolatteremtés regisztrálció nélkül.
 
-## 7. Igényelt üzleti folyamatok modellje
+## 5. Igényelt üzleti folyamatok modellje
 A weboldal egy főoldalból fog állni ahol felhasználónevet kér tőlünk majd ezután enged be a chatfelületre. Itt láthatunk egy üzenetablakot ahol a felhasználók látják a korábbi és aktuális üzeneteket. Görgethető felület,hogy a régebbi üzenetek is elérhetőek legyenek.
 Beviteli mezőben (input box) felhasználók beírhatják az üzeneteiket ami egy egyszerű szövegmező.Végül a küldés gomb Az üzenetek elküldésére szolgáló gomb.Felhasználók az Enter gombbal is elküldhetik az üzenetet.
-=======
-## 4. Jelenlegi üzleti folyamatok modellje
-Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megrendelőnk kérése számunkra az volt,hogy segítsünk neki egy olyan chat weboldalt készíteni amivel később más cég vetélytársa lehet mint például Messenger,Telegram.Bejelentkezés nélkül egy felhasználónév megadásával tud beszélgetni bárkivel a világon.
-
-## 5. Igényelt üzleti folyamatok modellje
->>>>>>> 3e9456c4241b1375f27a5dfd4a27fa97054063b2
 
 ## 6. Követelménylista
 
