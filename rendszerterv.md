@@ -9,9 +9,10 @@
    * Üzleti szereplő:
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend:
-   * Backend:
-   * Tesztelés:
+   * Frontend: Kiss Gergő, Rácz Levente
+   * Backend: Müller Krisztián, Fidrus Bence
+   * 
+   * Tesztelés: Kiss Gergő, Müller Krisztián, Fidrus Bence, Kiss Gergő
      
 ### 2.3 Ütemterv:
 
