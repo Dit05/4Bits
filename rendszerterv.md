@@ -4,14 +4,15 @@
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
-   * Scrum masters:
-   * Product owner: 
-   * Üzleti szereplő:
+   * Scrum masters: Müller Krisztián, Kiss Gergő, Fidrus Bence, Rácz Levente
+   * Product owner: Müller Krisztián, Kiss Gergő, Fidrus Bence, Rácz Levente
+   * Üzleti szereplő: Müller Krisztián, Kiss Gergő, Fidrus Bence, Rácz Levente
      
 ### 2.2 Projektmunkások és felelőségek:
    * Frontend: Kiss Gergő, Rácz Levente
+   * Feladatuk a főoldal megtervezése HTML és CSS-ben. Az API-ból érkező adatok leklérése és kiiratása a weboldalon Javascript segítségével.
    * Backend: Müller Krisztián, Fidrus Bence
-   * 
+   * Feladatuk a business osztályok definiálása és kifejtése, csevegés mentése és betöltése json fileba. HTTP kiszolgáló megírása
    * Tesztelés: Kiss Gergő, Müller Krisztián, Fidrus Bence, Kiss Gergő
      
 ### 2.3 Ütemterv:
