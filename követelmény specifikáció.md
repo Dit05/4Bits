@@ -19,9 +19,11 @@ A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különbö
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
 
 ## 6. Jelenlegi üzleti folyamatok modellje
-Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megrendelőnk kérése számunkra az volt,hogy segítsünk neki egy olyan chat weboldalt készíteni amivel később más cég vetélytársa lehet mint például Messenger,Telegram.Bejelentkezés nélkül egy felhasználónév megadásával tud beszélgetni bárkivel a világon.
+Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megrendelőnk kérése számunkra az volt,hogy segítsünk neki egy olyan chat weboldalt készíteni amivel később más cég vetélytársa lehet mint például Messenger,Telegram.Bejelentkezés nélkül egy felhasználónév megadásával tud beszélgetni bárkivel a világon.Egyszerűsíti és felgyorsítja kapcsolatteremtés regisztrálció nélkül.
 
 ## 7. Igényelt üzleti folyamatok modellje
+A weboldal egy főoldalból fog állni ahol felhasználónevet kér tőlünk majd ezután enged be a chatfelületre. Itt láthatunk egy üzenetablakot ahol a felhasználók látják a korábbi és aktuális üzeneteket. Görgethető felület,hogy a régebbi üzenetek is elérhetőek legyenek.
+Beviteli mezőben (input box) felhasználók beírhatják az üzeneteiket ami egy egyszerű szövegmező.Végül a küldés gomb Az üzenetek elküldésére szolgáló gomb.Felhasználók az Enter gombbal is elküldhetik az üzenetet.
 
 ## 8. Követelménylista
 
