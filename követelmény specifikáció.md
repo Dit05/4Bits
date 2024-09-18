@@ -10,6 +10,9 @@ A világon nincs elég üzenetküldő rendszer. Ezért alakítunk ki egy új, sz
 
 ## 3. Vágyálomrendszer
 
+A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különböző felhasználók között. A felhasználónak be kell írnia a nevét, majd az üzenetet amit el szeretne küldeni. A nevet a weboldal megjegyzi
+és onnantól bármennyi üzenetet írhat a felhasználó.
+
 ## 4. Jelenlegi üzleti folyamatok modellje
 
 ## 5. Igényelt üzleti folyamatok modellje
