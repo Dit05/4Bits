@@ -67,7 +67,7 @@
 ### Fejlesztő eszközök
 
 
-## 8. Architekturális terv
+## 7. Architekturális terv
 
 ### Webszerver
 
@@ -75,11 +75,11 @@
 
 ### A program elérése, kezelése
 
-## 9. Adatbázis terv
+## 8. Adatbázis terv
 
-## 10. Implementációs terv
+## 9. Implementációs terv
 
-## 11. Tesztterv
+## 10. Tesztterv
 
 A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata,
 ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása.
@@ -103,13 +103,13 @@ Tesztszám | Rövid leírás | Várt eredmény | Eredmény | Megjegyzés
 például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
 ... | ... | ... | ... | ...
 
-## 12. Telepítési terv
+## 11. Telepítési terv
 
 Fizikai telepítési terv: 
 
 Szoftver telepítési terv: 
 
-## 13. Karbantartási terv
+## 12. Karbantartási terv
 
 Fontos ellenőrizni:
 ...
