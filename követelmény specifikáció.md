@@ -25,7 +25,10 @@ A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különbö
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
-| K1 | ... | ... | ... |
+| K1 | Backend | Business osztályok definiálása | Az üzeneteket, csevegést ábrázoló típusok nyílvános felületének meghatározása. |
+| K2 | Backend | Business osztályok kifejtése | A K1-ben meghatározott osztályok belső működése. |
+| K3 | Backend | Csevegés mentése és betöltése | A csevegés mentődjön el egy szövegfájlba amikor a szerver leáll, és töltődjön be amikor elindul. |
+| K4 | Backend | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
 
 ## 9. Riportok
 
