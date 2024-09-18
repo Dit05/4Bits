@@ -13,17 +13,12 @@ A világon nincs elég üzenetküldő rendszer. Ezért alakítunk ki egy új, sz
 A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különböző felhasználók között. A felhasználónak be kell írnia a nevét, majd az üzenetet amit el szeretne küldeni. A nevet a weboldal megjegyzi
 és onnantól bármennyi üzenetet írhat a felhasználó.
 
-## 4. Funkcionális követelmények
-
-
-## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
-
-## 6. Jelenlegi üzleti folyamatok modellje
+## 4. Jelenlegi üzleti folyamatok modellje
 Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megrendelőnk kérése számunkra az volt,hogy segítsünk neki egy olyan chat weboldalt készíteni amivel később más cég vetélytársa lehet mint például Messenger,Telegram.Bejelentkezés nélkül egy felhasználónév megadásával tud beszélgetni bárkivel a világon.
 
-## 7. Igényelt üzleti folyamatok modellje
+## 5. Igényelt üzleti folyamatok modellje
 
-## 8. Követelménylista
+## 6. Követelménylista
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
@@ -32,7 +27,7 @@ Mai világban a kommunikáció tartására számtalan megoldás lehetséges.Megr
 | K3 | Backend | Csevegés mentése és betöltése | A csevegés mentődjön el egy szövegfájlba amikor a szerver leáll, és töltődjön be amikor elindul. |
 | K4 | Backend | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
 
-## 10. Fogalomtár
+## 7. Fogalomtár
 
 Aszinkron kommunikáció - A felhasználók közötti információcsere anélkül, hogy valós idejű interakcióra lenne szüksége.
 
