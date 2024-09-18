@@ -33,3 +33,6 @@ A projekt célja egy olyan weboldal, amely üzenetváltásra alkalmas különbö
 ## 9. Riportok
 
 ## 10. Fogalomtár
+
+Aszinkron kommunikáció - A felhasználók közötti információcsere anélkül, hogy valós idejű interakcióra lenne szüksége.
+
