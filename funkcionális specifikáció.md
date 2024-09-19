@@ -16,7 +16,8 @@ Számos előnnyel jár mint például:
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
-| K1 | ...| ... | ... |
+| K1 | Felület | Üdvözlő oldal | Felhasználót üdvözli majd Felhasználónevet kér |
+| K2 | Felület | Chat room | A felhasználó bekerül egy chatszobába ahol üzeneteket tud küldeni és fogadni |
 
 ## 6. Használati esetek
 
