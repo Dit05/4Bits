@@ -7,6 +7,7 @@ Számos előnnyel jár mint például:
 -Lehetőség van valós név nélkül kommunikálni: A felhasználók anonim módon is beszélgethetnek, mivel bármilyen felhasználónév megadható.
 
 ## 2. Vágyálomrendszer leírása
+Megrendelő vágyálma egy olyan letisztult és egyszerű felület, ahol a felhasználók azonnal csatlakozhatnak a beszélgetéshez néhány kattintással, regisztráció és személyes adatok megadása nélkül. A chat valós időben frissüljön a könnyebb kommunikáció érdekében.A weboldal telefonon,tableten és asztali számítógépen is könnyen használható legyen, így reszponzív weboldal fog készülni.A platform biztonságos, átlátható kialakítású legyen, hogy mindenki kényelmesen érezze magát a beszélgetések során.Fő Célja az, hogy baráti csevegés vagy új kapcsolatok jöjjenek létre.
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 
