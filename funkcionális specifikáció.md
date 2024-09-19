@@ -21,6 +21,7 @@ Megrendelő vágyálma egy olyan letisztult és egyszerű felület, ahol a felha
 | K2 | Felület | Chat room | A felhasználó bekerül egy chatszobába ahol üzeneteket tud küldeni és fogadni |
 
 ## 6. Használati esetek
+Az oldalra látogatva automatikusan üdvözlő oldal tölt be,ahol kérni fogja,hogy adjuk meg a felhasználónevünket amivel szerepelni szeretnénk a chatszobába.Ezután ha rákattintunk a "tovább" gomba,bekerülünk a chatszobába ahol már többen is lehetnek és kezdődhet a beszélgetés.Jogosultságok csak egyfajta lesz,általános felhasználó jogosultság.
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 
