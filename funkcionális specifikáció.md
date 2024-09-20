@@ -26,6 +26,8 @@ Az egyszerű és letisztult üzenetküldés céljából hozzuk létre ezt a fel�
 Az oldalra látogatva automatikusan üdvözlő oldal tölt be,ahol kérni fogja,hogy adjuk meg a felhasználónevünket amivel szerepelni szeretnénk a chatszobába.Ezután ha rákattintunk a "tovább" gomba,bekerülünk a chatszobába ahol már többen is lehetnek és kezdődhet a beszélgetés.Jogosultságok csak egyfajta lesz,általános felhasználó jogosultság.
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
+A szerver elindítása után a felhasználók tudnak csatlakozni webböngészőjükkel, és használni az alkalmazást a követelmények szerint. A szerver induláskor betölti a mentett üzeneteket, és folyamatosan menti a futás közben beérkezetteket.
+A kliens meg tudja adni az üdvözlőoldalon a felhasználónevét, majd utána üzeneteket tud küldeni.
 
 ## 8. Képernyőtervek
 
