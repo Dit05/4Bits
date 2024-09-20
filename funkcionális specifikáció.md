@@ -42,3 +42,6 @@ Az oldalra belépve a felhasználó egy felugró ablakban megadhatja a nevét, a
 | K4 | ... | ... |
 
 ## 11 Fogalomszótár
+| Fogalom | Leírás |
+| :---: | --- |
+| Reszponzív weboldal | A felület mérete és az elemek elhelyezkedése alkalmazkodik a böngésző ablakméretéhez |
