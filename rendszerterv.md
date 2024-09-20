@@ -106,10 +106,7 @@ például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával 
 ... | ... | ... | ... | ...
 
 ## 11. Telepítési terv
-
-Fizikai telepítési terv: 
-
-Szoftver telepítési terv: 
+Mivel weboldal és nem asztali alkalmazás így nem kell telepíteni semmit. Elég ha a számítógép rendelkezik .NET keretrendszerrel.A weboldalt internet hozzáféréssel bármikor el fogja tudni érni. 
 
 ## 12. Karbantartási terv
 
