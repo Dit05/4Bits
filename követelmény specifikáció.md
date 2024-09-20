@@ -24,10 +24,10 @@ Beviteli mezőben (input box) felhasználók beírhatják az üzeneteiket ami eg
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
-| K1 | Backend | Business osztályok definiálása | Az üzeneteket, csevegést ábrázoló típusok nyílvános felületének meghatározása. |
-| K2 | Backend | Business osztályok kifejtése | A K1-ben meghatározott osztályok belső működése. |
-| K3 | Backend | Csevegés mentése és betöltése | A csevegés mentődjön el egy szövegfájlba amikor a szerver leáll, és töltődjön be amikor elindul. |
-| K4 | Backend | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
+| K1 | Frontend | Név bekérése | Az oldal felhasználónevet kér. |
+| K2 | Frontend | Üzenetek visszaolvasása | Látszik az összes eddigi üzenet. |
+| K3 | Frontend | Üzenetküldés | Lehet küldeni üzenetet. |
+| K4 | Backend | Üzenetmegmaradás | Az üzenetek el vannak mentve egy json fájlban. |
 
 ## 7. Fogalomtár
 | Fogalom | Leírás |
