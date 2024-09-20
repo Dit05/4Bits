@@ -41,7 +41,10 @@ Az oldalra belépve a felhasználó egy felugró ablakban megadhatja a nevét, a
 
 | Id | Követelmény | Funkció |
 | :---: | --- | --- |
-| K4 | ... | ... |
+| K1 | Frontend | Név bekérése | Üdvözlő oldal |
+| K2 | Frontend | Üzenetek visszaolvasása | Chat room |
+| K3 | Frontend | Üzenetküldés | Chat room |
+| K4 | Backend | Üzenetmegmaradás | Chat room |
 
 ## 11 Fogalomszótár
 | Fogalom | Leírás |
