@@ -13,7 +13,7 @@ Megrendelő vágyálma egy olyan letisztult és egyszerű felület, ahol a felha
 A mostani chat alkalmazások/felületek túlnyomó része sokak számára rengeteg felesleges és bonyolult funkciókkal van ellátva, kevés az olyan szolgáltatás, amellyel ténylegesen egyszerűen lehet üzenetet küldeni online mások számára.
 
 ## 4. Igényelt üzleti folyamatok modellje
-
+Az egyszerű és letisztult üzenetküldés céljából hozzuk létre ezt a felületet, hogy megrendelőink számára egy olyan szolgáltatás álljon rendelkezésükre, ahol nem kell a regisztrációra, vagy a bonyolult felépítésre koncentrálni, hanem lényegretörően, effektíven tudjanak kommunikálni egymással.
 
 ## 5. Követelménylista
 
