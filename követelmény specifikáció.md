@@ -30,6 +30,7 @@ Beviteli mezőben (input box) felhasználók beírhatják az üzeneteiket ami eg
 | K4 | Backend | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
 
 ## 7. Fogalomtár
-
-Aszinkron kommunikáció - A felhasználók közötti információcsere anélkül, hogy valós idejű interakcióra lenne szüksége.
-
+| Fogalom | Leírás |
+| :---: | --- |
+| Aszinkron kommunikáció | A felhasználók közötti információcsere anélkül, hogy valós idejű interakcióra lenne szüksége. |
+| Reszponzív felület | A felület mérete és az elemek elhelyezkedése alkalmazkodik a böngésző ablakméretéhez |
