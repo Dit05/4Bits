@@ -58,6 +58,10 @@
 
 ### 5.2 Menühierarchiák
 
+- Felhasználó
+    - Beüthet számjegyeket,betűket,karakterláncokat amit akár ki is tud törölni.
+
+
 ## 6. Fizikai környezet
 
 ### Vásárolt softwarekomponensek és külső rendszerek
