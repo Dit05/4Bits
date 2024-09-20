@@ -52,6 +52,8 @@
 
 ### Támogatott eszközök
 
+Egy weboldalt terveztünk ami telefonon,tableten és asztali számítógépen is használható internetkapcsolat igénybevételével.
+
 ## 5. Funkcionális terv
 
 ### 5.1 Rendszerszereplők
