@@ -67,6 +67,8 @@ Egy weboldalt terveztünk ami telefonon,tableten és asztali számítógépen is
 
 ### 5.1 Rendszerszereplők
 
+- Felhasználó
+
 ### 5.2 Menühierarchiák
 
 - Felhasználó
