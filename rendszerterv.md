@@ -28,7 +28,16 @@
 |Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
 
 ### 2.4 Mérföldkövek:
-   * Prototípus átadása
+ - 09.25 Rendszerterv
+ - 09.25 Funkcionális specifikáció
+ - 09.25 Követelmény specifikáció
+ - 10.02 Frontend design megtervezése
+ - 10.02 Backend funkciók elkészítése
+ - 10.09 API megírása
+ - 10.09 Frontend javascript kiegészítése
+ - 10.16 Tesztelés
+
+
 
 ## 3. Üzleti folyamatok modellje
 
