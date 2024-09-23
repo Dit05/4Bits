@@ -25,8 +25,8 @@ felhasználók bármikor hozzáférhetnek a rendszerhez.
 |Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
 |Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
 |Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                1 |                   1 |
-|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Prototípus elkészítése                  |         4 |             8 |                      8 |                8 |                   8 |
+|Program                  |Alapfunkciók elkészítése                |         4 |             8 |                      8 |                8 |                   8 |
 |Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
 
 ### 2.4 Mérföldkövek:
@@ -106,6 +106,7 @@ A rendszerhez szükség van egy központi szerverre, melyhez C#-ot használunk. 
 A webfelület egy egyszerű HTML és JavaScript alapú oldal, melyet a felhasználó webböngészője a webszervertől szerez meg.
 
 ## 8. Adatbázis terv
+A rendszerhez nincs szükség külön adatbázis készítésére.Beszélgetések kimentése Json formatumban lehetséges.
 
 ## 9. Implementációs terv
 
