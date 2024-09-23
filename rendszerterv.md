@@ -78,7 +78,7 @@ Egy weboldalt terveztünk ami telefonon,tableten és asztali számítógépen is
 ### 5.2 Menühierarchiák
 
 - Felhasználó
-    - Beüthet számjegyeket,betűket,karakterláncokat amit akár ki is tud törölni.
+    - Beüthet számjegyeket, betűket, karakterláncokat amit akár ki is tud törölni. Üzenetként elküldheti a többi felhasználó számára, a többiek üzeneteit pedig mindig láthatja.
 
 
 ## 6. Fizikai környezet
