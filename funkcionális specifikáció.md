@@ -31,7 +31,8 @@ A kliens meg tudja adni az üdvözlőoldalon a felhasználónevét, majd utána 
 
 ## 8. Képernyőtervek
 
-![képnév](gitlink ahol a kép van)
+![fő](képernyőterv.png)
+![belépő](BelépésAblak.png)
 
 ## 9. Forgatókönyvek
 Az oldalra belépve a felhasználó egy felugró ablakban megadhatja a nevét, ahogyan meg szeretne jelenni mindenki más számára. A "tovább" gomb megnyomása után egy ablakban láthatja a mások által küldött üzeneteket, azokat is, amelyeket a belépés előtt küldtek el. Az ablak alatt lévő mezőkben láthatja a saját megadott nevét, valamint a kívánt üzenetet is beírja a másik mezőbe. Ezután a küldés gombra kattintva továbbítja a szerver felé az üzenetet, amely majd a többi felhasználó számára is megjelenik.
