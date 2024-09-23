@@ -90,7 +90,11 @@ Egy weboldalt terveztünk ami telefonon,tableten és asztali számítógépen is
 
 ### Webszerver
 
-### Adatbázis rendszer
+A rendszerhez szükség van egy központi szerverre, melyhez C#-ot használunk. Ez szolgálja ki a webböngészőknek a kliens weblapot, illetve a kliens innen szerzi és ide küldi az adatokat JSON objektumok formájában. A szerver a .NET HttpListener osztálya segítségével kezeli a kliens kéréseit.
+
+### Kliens
+
+A webfelület egy egyszerű HTML és JavaScript alapú oldal, melyet a felhasználó webböngészője a webszervertől szerez meg.
 
 ### A program elérése, kezelése
 
