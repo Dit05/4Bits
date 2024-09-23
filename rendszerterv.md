@@ -96,8 +96,6 @@ A rendszerhez szükség van egy központi szerverre, melyhez C#-ot használunk. 
 
 A webfelület egy egyszerű HTML és JavaScript alapú oldal, melyet a felhasználó webböngészője a webszervertől szerez meg.
 
-### A program elérése, kezelése
-
 ## 8. Adatbázis terv
 
 ## 9. Implementációs terv
