@@ -57,7 +57,9 @@ felhasználók bármikor hozzáférhetnek a rendszerhez.
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K1 | ... | ... |
+| K1 | Belépés | A felhasználó egy név segítségével be tud lépni az oldalra |
+| K2 | Üzenetek megtekintése | A felhasználó látja az előzőleg, más felhasználók által küldött üzeneteket. |
+| K3 | Üzenetet küldése | A felhasználó az általa beírt üzenetet továbbítani tudja a szerver, ezáltal mások felé is. |
 
 ### Nemfunkcionális követelmények
 
@@ -84,13 +86,14 @@ Egy weboldalt terveztünk ami telefonon,tableten és asztali számítógépen is
 ## 6. Fizikai környezet
 
 ### Vásárolt softwarekomponensek és külső rendszerek
-
+A termék nem rendelkezik fizetett, vásárolt komponensekkel.
 ### Hardver topológia
 
 ### Fizikai alrendszerek
 
 ### Fejlesztő eszközök
-
+- Visual Studio Code / Visual Studio
+- ASP.NET Core keretrendszer
 
 ## 7. Architekturális terv
 
