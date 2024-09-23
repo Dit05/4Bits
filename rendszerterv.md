@@ -1,6 +1,8 @@
 # Rendszerterv
 ## 1. A rendszer célja
-
+A rendszer célja, hogy a felhasználók egyszerűen és gyorsan tudjanak kommunikálni egymással az online platformon keresztül, illetve hogy egy biztonságos és megbízható kommunikációs csatornát nyújtson számukra.
+A rendszer átlátható felülettel rendelkezik és felhasználóbarát. A platform elérhető weben és mobil eszközökön keresztül, ezáltal a
+felhasználók bármikor hozzáférhetnek a rendszerhez.
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
