@@ -42,10 +42,14 @@ felhasználók bármikor hozzáférhetnek a rendszerhez.
 
 
 ## 3. Üzleti folyamatok modellje
-
-### 3.1 Üzleti szereplők
-
-### 3.2 Üzleti folyamatok
+1. Dokumentáció megírása, tervek elkészítése
+2. Programkód megírása, weboldal elkészítése
+   1. Backend
+   2. API
+   3. Frontend
+3. Tesztelés
+4. Hibák javítása, utolsó változtatások
+5. Termék átadása
 
 ## 4. Követelmények
 
