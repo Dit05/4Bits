@@ -1,0 +1,5 @@
+bin/*
+obj/*
+
+# Ha az editorotok rak valamit a working treebe ami amúgy nem a projekt része, azt ignoreoljátok itt:
+.vs/*
