@@ -113,6 +113,8 @@ A rendszerhez nincs szükség külön adatbázis készítésére.Beszélgetések
 
 ## 9. Implementációs terv
 
+A webes felület HTML, CSS, és JavaScript nyelven fog elkészülni. A felület felhasználja a backend API-ját, ami a REST elveket követi. A szerver .NET Core környezetbe fog futni, és C#-ban fog íródni.
+
 ## 10. Tesztterv
 
 A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata,
