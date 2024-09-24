@@ -64,11 +64,9 @@ felhasználók bármikor hozzáférhetnek a rendszerhez.
 | K5 | Business osztályok kifejtése | A K1-ben meghatározott osztályok belső működése. |
 | K6 | Csevegés mentése és betöltése | A csevegés mentődjön el egy szövegfájlba amikor a szerver leáll, és töltődjön be amikor elindul. |
 | K7 | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
+| K8 | Üzenetek fogadása és küldése | A frontend és a backend tudjon információt továbbítani egymásnak |
+| K9 | REST API kiépítése | A REST metódusok implementálása |
 
-### Nemfunkcionális követelmények
-
-| ID | Megnevezés | Leírás |
-| --- | --- | --- |
 
 ### Támogatott eszközök
 
@@ -90,9 +88,6 @@ Egy weboldalt terveztünk ami telefonon,tableten és asztali számítógépen is
 
 ### Vásárolt softwarekomponensek és külső rendszerek
 A termék nem rendelkezik fizetett, vásárolt komponensekkel.
-### Hardver topológia
-
-### Fizikai alrendszerek
 
 ### Fejlesztő eszközök
 - Visual Studio Code / Visual Studio
