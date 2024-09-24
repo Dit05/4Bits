@@ -60,12 +60,15 @@ felhasználók bármikor hozzáférhetnek a rendszerhez.
 | K1 | Belépés | A felhasználó egy név segítségével be tud lépni az oldalra |
 | K2 | Üzenetek megtekintése | A felhasználó látja az előzőleg, más felhasználók által küldött üzeneteket. |
 | K3 | Üzenetet küldése | A felhasználó az általa beírt üzenetet továbbítani tudja a szerver, ezáltal mások felé is. |
+| K4 | Business osztályok definiálása | Az üzeneteket, csevegést ábrázoló típusok nyílvános felületének meghatározása. |
+| K5 | Business osztályok kifejtése | A K1-ben meghatározott osztályok belső működése. |
+| K6 | Csevegés mentése és betöltése | A csevegés mentődjön el egy szövegfájlba amikor a szerver leáll, és töltődjön be amikor elindul. |
+| K7 | HTTP kiszolgáló | A szerveralkalmazás képes legyen kiszolgálni böngészőket a meghatározott erőforrásokkal. |
 
 ### Nemfunkcionális követelmények
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K4 | ... | ... |
 
 ### Támogatott eszközök
 
