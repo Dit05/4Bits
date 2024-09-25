@@ -117,22 +117,6 @@ ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifik
 A teszteléseket a fejlesztői csapat minden tagja elvégzi.
 Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
 
-### Tesztesetek
-
- | Teszteset | Elvárt eredmény | 
- |-----------|-----------------| 
- | ... | ... |
-
-### A tesztelési jegyzőkönyv kitöltésére egy sablon:
-
-**Tesztelő:** Vezetéknév Keresztnév
-
-**Tesztelés dátuma:** Év.Hónap.Nap
-
-Tesztszám | Rövid leírás | Várt eredmény | Eredmény | Megjegyzés
-----------|--------------|---------------|----------|-----------
-például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
-... | ... | ... | ... | ...
 
 ## 11. Telepítési terv
 Mivel weboldal és nem asztali alkalmazás így nem kell telepíteni semmit. Elég ha a számítógép rendelkezik .NET keretrendszerrel.A weboldalt internet hozzáféréssel bármikor el fogja tudni érni. 
