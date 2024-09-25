@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(26, 100, 150, 0.91);
+}
+
+.borderlogin {
+    border: 2px solid; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    max-width: 400px; 
+    width: 100%; 
+}
+
+.borderchat {
+    border: 2px solid; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    max-width: 800px; 
+    width: 100%; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
