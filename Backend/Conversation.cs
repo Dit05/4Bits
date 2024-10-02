@@ -8,13 +8,20 @@ namespace FourBits.Backend {
 
     class Conversation {
 
+        public struct Item {
+            public long id;
+            public long unixTimestamp;
+            public Message message;
+        }
+
+
         public static long GetUnixTimestamp(DateTime time) {
             return (long)time.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
         }
 
-        class Comparer : IComparer<(long timestamp, Message _)> {
-            public int Compare((long timestamp, Message _) x, (long timestamp, Message _) y) {
-                return x.timestamp.CompareTo(y.timestamp);
+        class Comparer : IComparer<Item> {
+            public int Compare(Item x, Item y) {
+                return x.unixTimestamp.CompareTo(y.unixTimestamp);
             }
         }
 
@@ -22,6 +29,7 @@ namespace FourBits.Backend {
 
 
         public static readonly string PROP_MESSAGES = "messages";
+        public static readonly string PROP_ID = "id";
         public static readonly string PROP_TIMESTAMP = "timestamp";
         public static readonly string PROP_MESSAGE = "message";
 
@@ -40,10 +48,16 @@ namespace FourBits.Backend {
             foreach(JsonNode? elem in array) {
                 JsonObject msgObj = (JsonObject)elem!;
 
+                long id = msgObj[PROP_ID]!.AsValue().GetValue<long>();
                 long timestamp = msgObj[PROP_TIMESTAMP]!.AsValue().GetValue<long>();
                 Message message = Message.FromJson(msgObj[PROP_TIMESTAMP]!.AsObject());
 
-                inst.InternalInsertMessage((timestamp, message), timestamp);
+                var item = new Item() {
+                    id = id,
+                    unixTimestamp = timestamp,
+                    message = message
+                };
+                inst.InternalInsertMessage(item);
             }
 
             return inst;
@@ -61,16 +75,20 @@ namespace FourBits.Backend {
         /// JSONná alakítja ezt a beszélgetést.
         /// Ez a metódus szálbiztos.
         /// </summary>
-        public JsonNode ToJson() {
+        /// <param name="minimumId">Csak az ekkora vagy nagyobb id-jű üzeneteket tartalmazza. Ha nincs megadva, akkor mindegyik benne lesz.</param>
+        public JsonNode ToJson(int minimumId = -1) {
             var obj = new JsonObject();
 
             JsonArray msgs = new JsonArray();
 
-            foreach((long timestamp, Message message) tuple in CloneMessages()) {
+            foreach(Item item in CloneMessages()) {
+                if(item.id < minimumId) continue;
+
                 JsonObject msgObj = new JsonObject();
 
-                msgObj.Add(PROP_TIMESTAMP, JsonValue.Create(tuple.timestamp));
-                msgObj.Add(PROP_MESSAGE, tuple.message.ToJson());
+                msgObj.Add(PROP_ID, JsonValue.Create(item.id));
+                msgObj.Add(PROP_TIMESTAMP, JsonValue.Create(item.unixTimestamp));
+                msgObj.Add(PROP_MESSAGE, item.message.ToJson());
 
                 msgs.Add(msgObj);
             }
@@ -84,28 +102,28 @@ namespace FourBits.Backend {
         //
 
 
+        private List<Item> _messages;
         /// <summary>Vigyázz! Ezt a listát más threadek bármikor módosíthatják. Valószínűleg a <see cref="CloneMessages"/>t akarod használni.</summary>
-        private List<(long timestamp, Message message)> _messages;
-        public IList<(long timestamp, Message message)> Messages => _messages;
+        public IList<Item> Messages => _messages;
 
         /// <summary>Szálbiztosan lemásolja a <see cref="Messages"/>t egy új listába, és visszaadja azt.</summary>
-        public IList<(long timestamp, Message message)> CloneMessages() {
+        public IList<Item> CloneMessages() {
             lock(_messages) {
-                return new List<(long timestamp, Message message)>(_messages);
+                return new List<Item>(_messages);
             }
         }
 
 
         public Conversation() {
-            _messages = new List<(long, Message)>();
+            _messages = new List<Item>();
         }
 
 
-        private void InternalInsertMessage((long timestamp, Message message) tuple, long unix) {
-            int index = _messages.BinarySearch(tuple, comparer);
+        private void InternalInsertMessage(Item item) {
+            int index = _messages.BinarySearch(item, comparer);
             if(index < 0) index = ~index;
 
-            _messages.Insert(index, tuple);
+            _messages.Insert(index, item);
         }
 
         /// <summary>
@@ -114,10 +132,15 @@ namespace FourBits.Backend {
         /// </summary>
         public void InsertMessage(Message msg, DateTime timestamp) {
             long unix = GetUnixTimestamp(timestamp);
-            (long, Message) tuple = (unix, msg);
 
             lock(_messages) {
-                InternalInsertMessage(tuple, unix);
+                Item item = new Item() {
+                    id = Messages.Count + 1,
+                    unixTimestamp = unix,
+                    message = msg
+                };
+
+                InternalInsertMessage(item);
             }
         }
 
