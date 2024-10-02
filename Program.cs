@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text.Json.Nodes;
@@ -83,13 +84,17 @@ namespace FourBits {
         static async Task SendFile(HttpListenerResponse response, string path) {
 
             // TODO streamreaderrel beolvasni a fájlt és azt írni a bufferbe (próbáld asynccel)
-            byte[] buffer = EncodeString("<html><body> Hello world!</body></html>");
+            string content = ReadFile(path).Result;
+            byte[] buffer = EncodeString(content);
 
             await response.OutputStream.WriteAsync(buffer);
             response.OutputStream.Close();
         }
-
-
+        static async Task<string> ReadFile(string path) {
+            using(var reader = new StreamReader(path)) {
+                return await reader.ReadToEndAsync();
+            }
+        }
         static async Task ApiCall(HttpListenerContext context, string path) {
             try {
                 switch(context.Request.HttpMethod) {
@@ -105,6 +110,7 @@ namespace FourBits {
                         JsonNode? payload = await JsonNode.ParseAsync(context.Request.InputStream);
 
                         ApiPost(path, context.Request.QueryString, payload);
+
 
                         context.Response.StatusCode = 200;
                         break;
@@ -122,7 +128,12 @@ namespace FourBits {
         static JsonNode ApiGet(string path, System.Collections.Specialized.NameValueCollection query) {
             switch(path) {
                 case "/messages":
-                    return JsonValue.Create(149); // TODO
+                    if(query == null) {
+                        return conversation.ToJson(-1);
+                    }
+                    else {
+                        return conversation.ToJson(int.Parse(query["since"]));
+                    }
             }
 
             throw new NotFoundException();
@@ -131,14 +142,13 @@ namespace FourBits {
         static void ApiPost(string path, System.Collections.Specialized.NameValueCollection query, JsonNode? json) {
             switch(path) {
                 case "/message":
-                    // TODO
-                    Console.WriteLine(json?.ToJsonString() ?? "null");
+                    if(json != null) {
+                        Conversation.FromJson(json);
+                    }
                     return;
             }
 
             throw new NotFoundException();
         }
-
     }
-
 }
