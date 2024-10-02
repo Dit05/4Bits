@@ -57,3 +57,9 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(78, 98, 101, 0.949); 
   }
+
+#label{
+    font-size:84%;
+    font-weight: bold;
+    font-family: 'Courier New';
+}
