@@ -4,7 +4,7 @@
 - 4Bits
 
 ## Rövid leírása
-
+Egy webes chatfelület ahol valós időben lehet kommunikálni egymással.
 
 ## Fejlesztésben részt vett személyek
 - **Müller Krisztián Norbert** - Backend
