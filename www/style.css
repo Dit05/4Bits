@@ -31,3 +31,29 @@ body{
     flex-grow: 1;
     margin-right: 10px;
 }
+
+.custom-navbar {
+    background-color: rgb(137, 193, 234);
+}
+
+.custom-footer {
+    background-color: rgb(137, 193, 234);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(76, 160, 171); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(78, 98, 101, 0.949); 
+  }
