@@ -85,6 +85,8 @@ namespace FourBits {
 
             // TODO streamreaderrel beolvasni a fájlt és azt írni a bufferbe (próbáld asynccel)
             string content = ReadFile(path).Result;
+            //TODO: if hogy kép-e vagy nem
+            //BinaryReader reader = new BinaryReader(new FileStream(path, FileMode.Open));
             byte[] buffer = EncodeString(content);
 
             await response.OutputStream.WriteAsync(buffer);
@@ -143,7 +145,8 @@ namespace FourBits {
             switch(path) {
                 case "/message":
                     if(json != null) {
-                        Conversation.FromJson(json);
+                        var msg = Message.FromJson(json);
+                        conversation.InsertMessage(msg, DateTime.UtcNow);
                     }
                     return;
             }

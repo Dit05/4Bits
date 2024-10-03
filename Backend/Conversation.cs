@@ -50,7 +50,7 @@ namespace FourBits.Backend {
 
                 long id = msgObj[PROP_ID]!.AsValue().GetValue<long>();
                 long timestamp = msgObj[PROP_TIMESTAMP]!.AsValue().GetValue<long>();
-                Message message = Message.FromJson(msgObj[PROP_TIMESTAMP]!.AsObject());
+                Message message = Message.FromJson(msgObj[PROP_MESSAGE]!.AsObject());
 
                 var item = new Item() {
                     id = id,
