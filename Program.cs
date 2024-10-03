@@ -110,7 +110,7 @@ namespace FourBits {
                 buffer = EncodeString(content);
             }
             else /*(response.ContentType.StartsWith("image/"))*/ {
-                BinaryReader reader = new BinaryReader(new FileStream(path, FileMode.Open));
+                BinaryReader reader = new BinaryReader(new FileStream(path, FileMode.Open, FileAccess.Read));
                 buffer = reader.ReadBytes((int)reader.BaseStream.Length);
             }
 
