@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Text;
 using System.Text.Json.Nodes;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,14 +24,18 @@ namespace FourBits {
 
         static byte[] EncodeString(string str) => System.Text.Encoding.UTF8.GetBytes(str);
 
-
         static Conversation conversation = new Conversation();
 
 
         static void Main(string[] args) {
-            conversation.InsertMessage(new Message("Béla", "Szia"));
+            // Teszt adatok
+            /*conversation.InsertMessage(new Message("Béla", "Szia"));
             Thread.Sleep(2000);
-            conversation.InsertMessage(new Message("Béla 2.0", "Üdv"));
+            conversation.InsertMessage(new Message("Béla 2.0", "Üdv"));*/
+
+            using(var reader = new StreamReader($"./{WWW_DIR}/messages.json")) {
+                conversation = Conversation.FromJson(JsonNode.Parse(reader.ReadToEnd()));
+            }
 
             Console.WriteLine(conversation.ToJson().ToJsonString());
 
@@ -83,20 +87,52 @@ namespace FourBits {
 
         static async Task SendFile(HttpListenerResponse response, string path) {
 
-            // TODO streamreaderrel beolvasni a fájlt és azt írni a bufferbe (próbáld asynccel)
             string content = ReadFile(path).Result;
-            //TODO: if hogy kép-e vagy nem
-            //BinaryReader reader = new BinaryReader(new FileStream(path, FileMode.Open));
-            byte[] buffer = EncodeString(content);
+            string contentType;
+            if (path.EndsWith(".html")) {
+                contentType = "text/html";
+            } 
+            else if (path.EndsWith(".css")) {
+                contentType = "text/css";
+            } 
+            else if (path.EndsWith(".jpg") || path.EndsWith(".jpeg")) {
+                contentType = "image/jpeg";
+            } 
+            else {
+                contentType = "application/javascript";
+            } 
+            // Feltételezzük, hogy a fájl ezen kiterjesztések egyikével rendelkezik
+
+            response.ContentType = contentType;
+            
+            byte[] buffer;
+            if(response.ContentType.StartsWith("text/")) {
+                buffer = EncodeString(content);
+            }
+            else /*(response.ContentType.StartsWith("image/"))*/ {
+                BinaryReader reader = new BinaryReader(new FileStream(path, FileMode.Open));
+                buffer = reader.ReadBytes((int)reader.BaseStream.Length);
+            }
 
             await response.OutputStream.WriteAsync(buffer);
             response.OutputStream.Close();
         }
         static async Task<string> ReadFile(string path) {
-            using(var reader = new StreamReader(path)) {
+            using(var reader = new StreamReader(path, Encoding.UTF8)) {
                 return await reader.ReadToEndAsync();
             }
         }
+
+        static async Task WriteFile(string path, JsonNode json) {
+            using(var writer = new StreamWriter(path, false, Encoding.UTF8)) {
+                // Olvashatóan, jól indentálva írja ki a JSON-t, ékezetes betűket megtartva.
+                await writer.WriteAsync(json.ToJsonString(new System.Text.Json.JsonSerializerOptions {
+                    WriteIndented = true,
+                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                }));
+            }
+        }
+
         static async Task ApiCall(HttpListenerContext context, string path) {
             try {
                 switch(context.Request.HttpMethod) {
@@ -141,12 +177,13 @@ namespace FourBits {
             throw new NotFoundException();
         }
 
-        static void ApiPost(string path, System.Collections.Specialized.NameValueCollection query, JsonNode? json) {
+        static async void ApiPost(string path, System.Collections.Specialized.NameValueCollection query, JsonNode? json) {
             switch(path) {
                 case "/message":
                     if(json != null) {
                         var msg = Message.FromJson(json);
                         conversation.InsertMessage(msg, DateTime.UtcNow);
+                        await WriteFile($"./{WWW_DIR}/messages.json", conversation.ToJson());
                     }
                     return;
             }
