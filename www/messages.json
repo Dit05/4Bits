@@ -1,20 +1,5 @@
 ﻿{
   "messages": [
-    {
-      "id": 1,
-      "timestamp": 1728389623,
-      "message": {
-        "sender": "fas",
-        "content": "alma"
-      }
-    },
-    {
-      "id": 2,
-      "timestamp": 1728389864,
-      "message": {
-        "sender": "idióma",
-        "content": "sziasztok"
-      }
-    }
+    
   ]
 }
