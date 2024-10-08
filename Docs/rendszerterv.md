@@ -35,9 +35,9 @@ felhasználók bármikor hozzáférhetnek a rendszerhez.
  - 09.25 Követelmény specifikáció
  - 10.02 Frontend design megtervezése
  - 10.02 Backend funkciók elkészítése
- - 10.09 API megírása
- - 10.09 Frontend javascript kiegészítése
- - 10.16 Tesztelés
+ - 10.02 API megírása
+ - 10.08 Frontend javascript kiegészítése
+ - 10.08 Tesztelés
 
 
 
