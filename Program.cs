@@ -49,8 +49,9 @@ namespace FourBits {
 
                 listener.Start();
                 Console.WriteLine($"{nameof(HttpListener)} now listening");
-                while(true) {
-                    HttpListenerContext context = await listener.GetContextAsync();
+                while(!cancelToken.IsCancellationRequested) {
+                    Task<HttpListenerContext> listen = listener.GetContextAsync();
+                    HttpListenerContext context = await listen.WaitAsync(cancelToken);
                     try {
                         Console.WriteLine($"Handling {context.Request.RemoteEndPoint}");
                         await HandleRequest(context);
@@ -147,8 +148,7 @@ namespace FourBits {
                     case "POST":
                         JsonNode? payload = await JsonNode.ParseAsync(context.Request.InputStream);
 
-                        ApiPost(path, context.Request.QueryString, payload);
-
+                        await ApiPost(path, context.Request.QueryString, payload);
 
                         context.Response.StatusCode = 200;
                         break;
@@ -166,20 +166,21 @@ namespace FourBits {
         static JsonNode ApiGet(string path, System.Collections.Specialized.NameValueCollection query) {
             switch(path) {
                 case "/messages":
-                    if(query == null) {
+                    string queryParam = query["since"];
+                    if(queryParam == null) {
                         return conversation.ToJson(-1);
                     }
                     else {
-                        return conversation.ToJson(int.Parse(query["since"]));
+                        return conversation.ToJson(int.Parse(queryParam));
                     }
             }
 
             throw new NotFoundException();
         }
 
-        static async void ApiPost(string path, System.Collections.Specialized.NameValueCollection query, JsonNode? json) {
+        static async Task ApiPost(string path, System.Collections.Specialized.NameValueCollection query, JsonNode? json) {
             switch(path) {
-                case "/message":
+                case "/messages":
                     if(json != null) {
                         var msg = Message.FromJson(json);
                         conversation.InsertMessage(msg, DateTime.UtcNow);

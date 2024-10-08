@@ -9,11 +9,12 @@ const apiUrl = 'http://127.0.0.1:8084/messages';
 async function fetchMessages() {
     try {
         const response = await fetch(apiUrl);
-        const messages = await response.json();
+        const json = await response.json();
         // console.log(messages);
 
-        messages.forEach((message) => {
-            chatTextarea.value += `${message.sender}: ${message.content}\n`;
+        chatTextarea.value = '';
+        json.messages.forEach((entry) => {
+            chatTextarea.value += `${entry.message.sender}: ${entry.message.content}\n`;
         });
     } catch (error) {
         console.error("Nem sikerült lekérdezni az üzeneteket!", error);
