@@ -59,6 +59,8 @@ namespace FourBits {
                         Console.WriteLine($"Exception while handling request: {e}");
                         try {
                             context.Response.StatusCode = 500;
+                        } catch(Exception) {
+                            // do nothing
                         } finally {
                             context.Response.Close();
                         }
